@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Klyent - Notre approche du développement tech minimaliste - À propos de nous">
+    <title>À Propos | Klyent - Solutions Techniques Innovantes</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Polices Google Fonts (JetBrains Mono & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Préchargement du CSS -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+
+    <!-- Script de gestion du thème (placé en premier pour éviter FOUC) -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <img class="logo-img" src="images/logo.png" alt="Klyent Logo">
+                    <span>Klyent</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="about.html" class="active">À PROPOS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="expertise.html">EXPERTISE</a></li>
+                    <li><a href="projets.html">PROJETS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+                        Mode Sombre
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Nos valeurs</h1>
+                <p class="lead">Précision, Fiabilité, Évolutivité & Partenariat</p>
+            </div>
+        </section>
+
+        <section class="section about-main">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2>Notre Philosophie</h2>
+                        <p>Chez Klyent, nous pensons qu'un bon code est avant tout un code solide, clair et fait pour durer.
+                            Nous mettons notre exigence technique et notre sens du détail au service de vos projets,
+                            avec l'envie de construire des bases fiables et pérennes.</p>
+
+                        <p>À chaque étape, nous travaillons avec vous, en étant à l'écoute de vos besoins pour créer des
+                            solutions sur mesure, prêtes à évoluer à vos côtés.</p>
+
+                        <h3>Principes Fondamentaux</h3>
+                        <ul class="about-list">
+                            <li><strong>Précision</strong> - Chaque décision technique est prise avec soin et exigence.
+                            </li>
+                            <li><strong>Fiabilité</strong> - Nous construisons des bases solides, pensées pour durer et
+                                évoluer.
+                            </li>
+                            <li><strong>Évolutivité</strong> - Nos solutions s'adaptent à votre rythme et à vos
+                                ambitions.
+                            </li>
+                            <li><strong>Partenariat</strong> - Nous avançons avec vous, dans un esprit de confiance et
+                                d'échange.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-visual">
+                        <div class="code-terminal">
+                            <div class="terminal-header">
+                                <span class="terminal-button"></span>
+                                <span class="terminal-button"></span>
+                                <span class="terminal-button"></span>
+                                <span class="terminal-title">MG_philosophy.md</span>
+                            </div>
+                            <div class="terminal-content">
+                                <pre><code># Klyent APPROACH
+
+## We believe in:
+
+- Building clear, reliable, and lasting code
+- Engineering with care and precision
+- Growing and improving with every project
+- Designing architectures that evolve alongside your needs
+- Working together with trust and commitment
+
+> "Coming together is a beginning,
+> staying together is progress,
+> and working together is success."
+> — Henry Ford</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos Fondateurs</h2>
+                    <p class="section-description">Des experts passionnés par la création de solutions numériques
+                        élégantes et performantes.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder"></div>
+                        </div>
+                        <h3>Rémy VISCAINO</h3>
+                        <p class="member-role">Développeur full stack</p>
+                        <p class="member-bio">Expert en développement full stack avec une passion pour les technologies
+                            modernes.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder"></div>
+                        </div>
+                        <h3>Mylan ATLANI</h3>
+                        <p class="member-role">Développeur full stack</p>
+                        <p class="member-bio">Spécialiste en développement full stack, axé sur l'innovation et
+                            l'efficacité.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder"></div>
+                        </div>
+                        <h3>Fazyl OSMANE</h3>
+                        <p class="member-role">Sales & Product Owner</p>
+                        <p class="member-bio">Responsable des ventes et de la gestion de produit, avec une approche
+                            centrée sur le client.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-values">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos Valeurs</h2>
+                    <p class="section-description">Principes qui guident notre travail au quotidien.</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                            </svg>
+                        </div>
+                        <h3>Transparence</h3>
+                        <p>Nous croyons en une communication ouverte et honnête avec nos clients et partenaires.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="12" />
+                                <line x1="12" y1="16" x2="12.01" y2="16" />
+                            </svg>
+                        </div>
+                        <h3>Qualité</h3>
+                        <p>Nous ne faisons jamais de compromis sur la qualité de notre travail, quel que soit le projet.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="10 8 16 12 10 16 10 8" />
+                            </svg>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Nous explorons constamment de nouvelles technologies et méthodologies pour rester à la
+                            pointe.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3>Collaboration</h3>
+                        <p>Nous travaillons en collaboration avec nos clients pour créer des solutions qui
+                            répondent à leurs besoins réels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-history">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre Histoire</h2>
+                    <p class="section-description">Comment nous sommes devenus l'entreprise que nous sommes aujourd'hui.
+                    </p>
+                </div>
+                <div class="history-timeline">
+                    <div class="history-item">
+                        <div class="history-year">2020</div>
+                        <div class="history-content">
+                            <h3>Fondation</h3>
+                            <p>Klyent est née de la vision commune de professionnels partageant une passion pour le
+                                développement technique d'excellence.</p>
+                        </div>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-year">2021</div>
+                        <div class="history-content">
+                            <h3>Premiers Succès</h3>
+                            <p>Notre approche minimaliste et technique a rapidement séduit des clients à la recherche de
+                                solutions sur mesure.</p>
+                        </div>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-year">2022</div>
+                        <div class="history-content">
+                            <h3>Expansion</h3>
+                            <p>Croissance de notre équipe et élargissement de notre portefeuille de services pour
+                                répondre à une demande croissante.</p>
+                        </div>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-year">2024</div>
+                        <div class="history-content">
+                            <h3>Aujourd'hui</h3>
+                            <p>Klyent continue d'évoluer et d'innover, tout en restant fidèle à ses principes fondateurs de
+                                simplicité et d'excellence technique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Prêt à travailler ensemble?</h2>
+                    <p>Découvrez comment notre approche peut transformer votre projet.</p>
+                    <div class="cta-buttons">
+                        <a href="services.html" class="btn btn-secondary">Nos Services</a>
+                        <a href="contact.html" class="btn btn-primary">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre Équipe</h2>
+                </div>
+                <ul>
+                    <li>Rémy VISCAINO : Développeur full stack</li>
+                    <li>Mylan ATLANI : Développeur full stack</li>
+                    <li>Fazyl OSMANE : Sales & Product Owner</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <img class="logo-img" src="images/logo.png" alt="Klyent Logo">
+                    <span>Klyent</span>
+                </a>
+                <p>&copy; 2024 Klyent • Tous droits réservés • Design minimaliste et développement technique d'excellence
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script principal (main.js importe les autres) -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond cercle gauche -->
+  <circle cx="140" cy="100" r="60" fill="#f4f7f8"/>
+  
+  <!-- Graphique circulaire -->
+  <circle cx="140" cy="100" r="50" stroke="#4d7c8a" stroke-width="2" fill="none"/>
+  <path d="M140 100 L140 50 A50 50 0 0 1 181.5 129 Z" fill="#1d3e53"/>
+  <path d="M140 100 L181.5 129 A50 50 0 0 1 140 150 Z" fill="#5a8fa2"/>
+  <path d="M140 100 L140 150 A50 50 0 0 1 90 100 Z" fill="#85a6b1"/>
+  <path d="M140 100 L90 100 A50 50 0 0 1 140 50 Z" fill="#3d6370"/>
+  
+  <circle cx="140" cy="100" r="20" fill="white"/>
+  <text x="135" y="95" font-family="Arial" font-size="12" fill="#1d3e53">%</text>
+  <text x="130" y="110" font-family="Arial" font-size="16" font-weight="bold" fill="#1d3e53">87</text>
+  
+  <!-- Fond cercle droit -->
+  <circle cx="260" cy="100" r="60" fill="#f4f7f8"/>
+  
+  <!-- Icône de bouclier de sécurité -->
+  <path d="M260 60 L300 80 L260 155 L220 80 Z" fill="none" stroke="#1d3e53" stroke-width="2"/>
+  <path d="M260 70 L290 85 L260 145 L230 85 Z" fill="#f4f7f8" stroke="#4d7c8a" stroke-width="2"/>
+  
+  <!-- Icône de loupe -->
+  <circle cx="250" cy="95" r="15" fill="none" stroke="#1d3e53" stroke-width="2"/>
+  <path d="M260 105 L275 120" stroke="#1d3e53" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Icône de coche -->
+  <circle cx="270" cy="110" r="12" fill="#5a8fa2"/>
+  <path d="M263 110 L268 115 L278 105" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 

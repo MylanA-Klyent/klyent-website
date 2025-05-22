@@ -1,0 +1,30 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fenêtre du navigateur -->
+  <rect x="50" y="30" width="300" height="140" rx="5" fill="white" stroke="#1d3e53" stroke-width="2"/>
+  
+  <!-- Barre de navigation du navigateur -->
+  <rect x="50" y="30" width="300" height="25" rx="5" fill="#1d3e53"/>
+  <circle cx="65" cy="42.5" r="5" fill="#ff6b6b"/>
+  <circle cx="85" cy="42.5" r="5" fill="#feca57"/>
+  <circle cx="105" cy="42.5" r="5" fill="#1dd1a1"/>
+  <rect x="125" y="37.5" width="200" height="10" rx="5" fill="#f1f2f6"/>
+  
+  <!-- Contenu de la page web -->
+  <rect x="70" y="70" width="120" height="10" rx="2" fill="#f1f2f6"/>
+  <rect x="70" y="90" width="80" height="10" rx="2" fill="#f1f2f6"/>
+  <rect x="70" y="110" width="100" height="10" rx="2" fill="#f1f2f6"/>
+  <rect x="70" y="130" width="90" height="10" rx="2" fill="#f1f2f6"/>
+  
+  <!-- Éléments d'interface utilisateur -->
+  <rect x="210" y="70" width="120" height="80" rx="4" fill="#f1f2f6"/>
+  <rect x="220" y="80" width="100" height="10" rx="2" fill="white"/>
+  <rect x="220" y="100" width="60" height="10" rx="2" fill="white"/>
+  <rect x="220" y="120" width="80" height="10" rx="2" fill="white"/>
+  <rect x="260" y="140" width="60" height="10" rx="5" fill="#4d7c8a"/>
+  
+  <!-- Balises de code -->
+  <text x="75" y="78" font-family="monospace" font-size="10" fill="#4d7c8a">&lt;div&gt;</text>
+  <text x="120" y="110" font-family="monospace" font-size="8" fill="#1d3e53">&lt;/div&gt;</text>
+  <text x="220" y="90" font-family="monospace" font-size="8" fill="#4d7c8a">&lt;form&gt;</text>
+  <text x="285" y="130" font-family="monospace" font-size="8" fill="#1d3e53">&lt;/form&gt;</text>
+</svg> 

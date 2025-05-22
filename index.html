@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Klyent - Agence de développement tech minimaliste - Solutions numériques innovantes">
+    <title>Klyent - Solutions Techniques Innovantes</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Polices Google Fonts (JetBrains Mono & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Préchargement du CSS -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Script de gestion du thème (placé en premier pour éviter FOUC) -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <img class="logo-img" src="images/logo.png" alt="Klyent Logo">
+                    <span>Klyent</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="expertise.html">EXPERTISE</a></li>
+                    <li><a href="projets.html">PROJETS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+                        Mode Sombre
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Vos projets numériques, développés pour durer et évoluer</h1>
+
+                        <p>Nous développons vos applications et plateformes sur mesure, adaptées à vos usages et vos
+                            objectifs.
+                            <br>Nos projets s'appuient sur des technologies modernes, ouvertes et faciles à maintenir.
+                        </p>
+                        <p>Notre objectif : construire des solutions fiables et évolutives, pensées pour être scalable.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#services" class="btn btn-primary">Découvrir nos services</a>
+                            <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-visual">
+                    /* code snippet */
+                    const createSolution = async (client) => {
+                    const needs = await analyzeRequirements(client.needs);
+                    const tech = selectTechnology(needs);
+                    const solution = buildSolution(tech);
+                    await deploy(solution);
+                    return monitorPerformance(solution);
+                    };
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos valeurs</h2>
+                    <p class="section-description">Chez Klyent, nous sommes des artisans du numérique, passionnés par la
+                        création de solutions sur mesure, fiables et durables.</p>
+                </div>
+                <div class="about-content">
+                    <p>Nous travaillons avec vous, et non simplement pour vous, en privilégiant l'écoute, la rigueur
+                        technique et le sens du détail.
+                        <br>Nous pensons qu'un bon code n'est pas seulement performant :
+                        il doit être clair, solide, et pouvoir être repris et fait évoluer facilement.
+                        Nos projets s'appuient sur des technologies reconnues et maîtrisées, pour vous offrir des
+                        solutions pérennes, indépendantes et simples à maintenir.
+                    </p>
+                    <p>À chaque étape, nous avançons à vos côtés avec la même exigence et le même engagement que si
+                        c'était notre propre projet.</p>
+                    <a href="about.html" class="btn btn-secondary">En savoir plus sur notre méthode</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section trusted-by">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="trusted-title">Ils nous ont fait confiance</h2>
+                    <p class="section-description">Des entreprises majeures nous ont confié leurs projets numériques</p>
+                </div>
+                <div class="trusted-logos-premium">
+                    <img src="images/client-logo/CMA_CGM.png" alt="CMA CGM" class="trusted-logo-img premium">
+                    <img src="images/client-logo/Ciffreo_bona.png" alt="Ciffreo bona" class="trusted-logo-img premium">
+                    <img src="images/client-logo/Kaporal.webp" alt="Kaporal" class="trusted-logo-img premium">
+                    <img src="images/client-logo/Thales.webp" alt="Thales" class="trusted-logo-img premium">
+                    <img src="images/client-logo/FDJ.png" alt="FDJ" class="trusted-logo-img premium">
+                    <img src="images/client-logo/Michelin.webp" alt="Michelin" class="trusted-logo-img premium">
+                    <img src="images/client-logo/PSA.webp" alt="PSA" class="trusted-logo-img premium">
+                    <img src="images/client-logo/LVMH.webp" alt="LVMH" class="trusted-logo-img premium">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="approach">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre approche</h2>
+                    <p class="section-description">Nous nous intégrons comme une extension naturelle de votre
+                        entreprise, en vous accompagnant à chaque étape de vos projets numériques.</p>
+                </div>
+                <div class="approach-container">
+                    <div class="approach-timeline">
+                        <div class="timeline-track"></div>
+                        <div class="timeline-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Écoute & analyse</h3>
+                                <p>Nous prenons le temps de comprendre vos besoins spécifiques, votre vision et vos
+                                    objectifs. Nous analysons vos processus existants pour identifier les opportunités
+                                    d'amélioration.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Conseil stratégique</h3>
+                                <p>En tant que partenaire technologique, nous vous guidons vers les solutions les plus
+                                    adaptées à votre contexte, en privilégiant l'efficacité, la scalabilité et le retour
+                                    sur investissement.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Développement intégré</h3>
+                                <p>Notre équipe travaille en symbiose avec la vôtre.
+                                    Nous ne nous positionnons pas simplement comme un prestataire, mais comme un
+                                    véritable partenaire.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h3>Accompagnement continu</h3>
+                                <p>Notre collaboration ne s'arrête pas à la livraison. Nous restons disponible pour
+                                    assurer l'évolution et la maintenance de vos solutions, comme le ferait un
+                                    département IT interne.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="approach-visual">
+                        <div class="code-terminal">
+                            <div class="terminal-header">
+                                <span class="terminal-dot"></span>
+                                <span class="terminal-dot"></span>
+                                <span class="terminal-dot"></span>
+                                <span class="terminal-title">Klyent@client:~</span>
+                            </div>
+                            <div class="terminal-content">
+                                <div class="terminal-line"><span class="terminal-prompt">$</span> init partnership</div>
+                                <div class="terminal-line"><span class="terminal-output">→ Analysing client
+                                        needs...</span></div>
+                                <div class="terminal-line"><span class="terminal-output">→ Identifying optimal
+                                        solution...</span></div>
+                                <div class="terminal-line"><span class="terminal-output">→ Integrating with client
+                                        team...</span></div>
+                                <div class="terminal-line"><span class="terminal-prompt">$</span> deploy solution</div>
+                                <div class="terminal-line"><span class="terminal-output">→ Solution deployed
+                                        successfully</span></div>
+                                <div class="terminal-line"><span class="terminal-prompt">$</span> maintain --continuous
+                                </div>
+                                <div class="terminal-line"><span class="terminal-output">→ Continuous maintenance:
+                                        ACTIVE</span></div>
+                                <div class="terminal-line"><span class="terminal-cursor">_</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!--  <div class="approach-action">
+                    <a href="process.html" class="btn btn-secondary">Découvrir notre processus en détail</a>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos Services</h2>
+                    <p class="section-description">Des solutions sur mesure pour répondre à tous vos besoins de
+                        développement numérique.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Développement</h3>
+                            <ul class="feature-list">
+                                <li>Applications web progressives</li>
+                                <li>Applications mobiles natives</li>
+                                <li>Systèmes back-end robustes</li>
+                                <li>Architectures microservices</li>
+                                <li>Sites</li>
+                            </ul>
+                        </div>
+                     <!--    <div class="card-action">
+                            <a href="dev-details.html" class="btn btn-secondary">Détails</a>
+                        </div> -->
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Maintenance</h3>
+                            <ul class="feature-list">
+                                <li>Optimisation continue</li>
+                                <li>Monitoring des performances</li>
+                                <li>Mise à jour de sécurité</li>
+                                <li>Scaling d'infrastructures</li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="expertise">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre Expertise</h2>
+                    <p class="section-description">Nous maîtrisons les technologies modernes pour créer des solutions
+                        adaptées à vos besoins.</p>
+                </div>
+                <div class="expertise-grid card-grid">
+                    <div class="card">
+                        <h3 class="card-title">Frontend</h3>
+                        <p>Next.js, Tailwind CSS, TypeScript, Flutter</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Backend</h3>
+                        <p>NestJS, Prisma, RabbiMQ, Redis, WebSockets, GraphQL / REST APIs</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Database</h3>
+                        <p>PostgreSQL, MongoDB, MySQL</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">DevOps</h3>
+                        <p>Docker, Kubernetes, CI/CD, AWS, GCP, Azure</p>
+                    </div>
+                </div>
+                <div class="expertise-action">
+                    <a href="expertise.html" class="btn btn-secondary">Voir toutes nos expertises</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projets">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Projets Récents</h2>
+                    <p class="section-description">Des solutions techniques innovantes pour des clients exigeants.</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3 class="card-title">Kaporal</h3>
+                        <p>Refonte e-commerce headless avec approche microservices, coordination des équipes internes et externes, optimisation de l'expérience utilisateur et intégration omnicanale (web, mobile, retail)</p>
+                        <!-- <div class="card-action">
+                            <a href="projets/system01.html" class="btn btn-secondary">Étude de cas</a>
+                        </div> -->
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Softway Medical</h3>
+                        <p>Refonte de modules applicatifs en environnement médical – coordination projet, montée en qualité du code, et migration vers une architecture scalable</p>
+                        <!-- <div class="card-action">
+                            <a href="projets/gridsync.html" class="btn btn-secondary">Étude de cas</a>
+                        </div> -->
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Ciffreo bona</h3>
+                        <p>Refonte e-commerce et presence web – optimisation de l'expérience utilisateur et intégration omnicanale (web, retail)</p>
+                        <!-- <div class="card-action">
+                            <a href="projets/datavisual.html" class="btn btn-secondary">Étude de cas</a>
+                        </div> -->
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Happer</h3>
+                        <p>Développement d'une application mobile native Android – architecture moderne, Kotlin, Clean Architecture et intégration Mongo</p>
+                        <!-- <div class="card-action">
+                            <a href="projets/datavisual.html" class="btn btn-secondary">Étude de cas</a>
+                        </div> -->
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Parky</h3>
+                        <p>Développement d'une solution de stationnement intelligent – applications mobile (Flutter), web et back-office, architecture temps réel et IoT-ready
+                        </p>
+                        <!-- <div class="card-action">
+                            <a href="projets/datavisual.html" class="btn btn-secondary">Étude de cas</a>
+                        </div> -->
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">PetPalz</h3>
+                        <p>Application mobile et plateforme communautaire pour les propriétaires d'animaux. Suivi de santé, rappels vétérinaires, gestion de profil animal complet, et espace d'échange entre passionnés d'animaux.</p>
+                        <!-- <div class="card-action">
+                            <a href="projets/petpalz.html" class="btn btn-secondary">Étude de cas</a>
+                        </div> -->
+                    </div>                    
+                </div>
+                <div class="projects-action">
+                    <a href="projets.html" class="btn btn-primary">Voir tous nos projets</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact</h2>
+                    <p class="section-description">Discutons de votre projet et trouvons ensemble la solution adaptée.
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <p><strong>email:</strong> <a href="mailto:contact@klyent.fr">contact@klyent.fr</a></p>
+                    <p><strong>téléphone:</strong> +33 7 67 73 28 92</p>
+                    <a href="contact.html" class="btn btn-primary">Planifier une consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <img class="logo-img" src="images/logo.png" alt="Klyent Logo">
+                    <span>Klyent</span>
+                </a>
+                <p>&copy; 2024 Klyent • Tous droits réservés • Design minimaliste et développement technique d'excellence
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script principal (main.js importe les autres) -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

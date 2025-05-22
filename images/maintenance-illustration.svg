@@ -1,0 +1,51 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond circulaire -->
+  <circle cx="200" cy="100" r="80" fill="#f4f7f8"/>
+  
+  <!-- Circuit board pattern -->
+  <path d="M130 60 L270 60" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M130 80 L270 80" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M130 100 L270 100" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M130 120 L270 120" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M130 140 L270 140" stroke="#4d7c8a" stroke-width="2"/>
+  
+  <path d="M150 60 L150 140" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M170 60 L170 140" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M190 60 L190 140" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M210 60 L210 140" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M230 60 L230 140" stroke="#4d7c8a" stroke-width="2"/>
+  <path d="M250 60 L250 140" stroke="#4d7c8a" stroke-width="2"/>
+  
+  <!-- Points de connexion -->
+  <circle cx="150" cy="80" r="3" fill="#5a8fa2"/>
+  <circle cx="150" cy="120" r="3" fill="#5a8fa2"/>
+  <circle cx="170" cy="100" r="3" fill="#5a8fa2"/>
+  <circle cx="190" cy="80" r="3" fill="#5a8fa2"/>
+  <circle cx="190" cy="120" r="3" fill="#5a8fa2"/>
+  <circle cx="210" cy="100" r="3" fill="#5a8fa2"/>
+  <circle cx="230" cy="80" r="3" fill="#5a8fa2"/>
+  <circle cx="230" cy="120" r="3" fill="#5a8fa2"/>
+  <circle cx="250" cy="100" r="3" fill="#5a8fa2"/>
+  
+  <!-- Icône de notification -->
+  <circle cx="160" cy="70" r="15" fill="#1d3e53"/>
+  <path d="M160 64 L160 76" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="160" cy="80" r="1" fill="white"/>
+  
+  <!-- Icône d'engrenage -->
+  <circle cx="240" cy="70" r="15" fill="#4d7c8a"/>
+  <path d="M240 55 L240 60" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M240 80 L240 85" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M225 70 L230 70" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M250 70 L255 70" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M229 59 L233 63" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M247 77 L251 81" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M229 81 L233 77" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M247 63 L251 59" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="240" cy="70" r="5" fill="white"/>
+  
+  <!-- Icône de bouclier de sécurité -->
+  <path d="M200 125 L200 155 L180 145 L200 125 Z" fill="#1d3e53"/>
+  <path d="M200 125 L200 155 L220 145 L200 125 Z" fill="#4d7c8a"/>
+  <circle cx="200" cy="135" r="4" fill="white"/>
+</svg> 

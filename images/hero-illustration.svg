@@ -1,0 +1,182 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond de la ville digitale -->
+  <rect x="400" y="250" width="350" height="250" fill="#f4f7f8" />
+  
+  <!-- Bâtiments de la ville -->
+  <rect x="420" y="150" width="30" height="350" fill="#1d3e53" />
+  <rect x="470" y="200" width="40" height="300" fill="#4d7c8a" />
+  <rect x="530" y="250" width="50" height="250" fill="#5a8fa2" />
+  <rect x="600" y="180" width="35" height="320" fill="#3d6370" />
+  <rect x="650" y="230" width="45" height="270" fill="#85a6b1" />
+  <rect x="710" y="280" width="25" height="220" fill="#1d3e53" />
+  
+  <!-- Fenêtres des bâtiments -->
+  <g fill="white">
+    <rect x="425" y="170" width="20" height="10" />
+    <rect x="425" y="190" width="20" height="10" />
+    <rect x="425" y="210" width="20" height="10" />
+    <rect x="425" y="230" width="20" height="10" />
+    <rect x="425" y="250" width="20" height="10" />
+    <rect x="425" y="270" width="20" height="10" />
+    
+    <rect x="475" y="220" width="30" height="15" />
+    <rect x="475" y="245" width="30" height="15" />
+    <rect x="475" y="270" width="30" height="15" />
+    <rect x="475" y="295" width="30" height="15" />
+    <rect x="475" y="320" width="30" height="15" />
+    
+    <rect x="540" y="270" width="30" height="20" />
+    <rect x="540" y="300" width="30" height="20" />
+    <rect x="540" y="330" width="30" height="20" />
+    <rect x="540" y="360" width="30" height="20" />
+    
+    <rect x="605" y="200" width="25" height="12" />
+    <rect x="605" y="222" width="25" height="12" />
+    <rect x="605" y="244" width="25" height="12" />
+    <rect x="605" y="266" width="25" height="12" />
+    <rect x="605" y="288" width="25" height="12" />
+    <rect x="605" y="310" width="25" height="12" />
+    
+    <rect x="655" y="250" width="35" height="15" />
+    <rect x="655" y="275" width="35" height="15" />
+    <rect x="655" y="300" width="35" height="15" />
+    <rect x="655" y="325" width="35" height="15" />
+    <rect x="655" y="350" width="35" height="15" />
+    
+    <rect x="715" y="300" width="15" height="10" />
+    <rect x="715" y="320" width="15" height="10" />
+    <rect x="715" y="340" width="15" height="10" />
+    <rect x="715" y="360" width="15" height="10" />
+    <rect x="715" y="380" width="15" height="10" />
+  </g>
+  
+  <!-- Montagnes -->
+  <path d="M0 500 L150 300 L300 450 L450 350 L600 430 L800 350 L800 500 Z" fill="#e8f0ee" />
+  
+  <!-- Circuits de la ville digitale -->
+  <g stroke="#4d7c8a" stroke-width="2">
+    <line x1="0" y1="480" x2="800" y2="480" />
+    <line x1="100" y1="450" x2="700" y2="450" />
+    <line x1="200" y1="420" x2="600" y2="420" />
+    <line x1="0" y1="390" x2="800" y2="390" />
+    
+    <line x1="100" y1="390" x2="100" y2="500" />
+    <line x1="200" y1="420" x2="200" y2="500" />
+    <line x1="300" y1="390" x2="300" y2="500" />
+    <line x1="400" y1="420" x2="400" y2="500" />
+    <line x1="500" y1="390" x2="500" y2="500" />
+    <line x1="600" y1="420" x2="600" y2="500" />
+    <line x1="700" y1="390" x2="700" y2="500" />
+  </g>
+  
+  <!-- Points de connexion -->
+  <circle cx="100" cy="480" r="4" fill="#5a8fa2" />
+  <circle cx="200" cy="480" r="4" fill="#5a8fa2" />
+  <circle cx="300" cy="480" r="4" fill="#5a8fa2" />
+  <circle cx="400" cy="480" r="4" fill="#5a8fa2" />
+  <circle cx="500" cy="480" r="4" fill="#5a8fa2" />
+  <circle cx="600" cy="480" r="4" fill="#5a8fa2" />
+  <circle cx="700" cy="480" r="4" fill="#5a8fa2" />
+  
+  <circle cx="100" cy="450" r="4" fill="#5a8fa2" />
+  <circle cx="300" cy="450" r="4" fill="#5a8fa2" />
+  <circle cx="500" cy="450" r="4" fill="#5a8fa2" />
+  <circle cx="700" cy="450" r="4" fill="#5a8fa2" />
+  
+  <circle cx="200" cy="420" r="4" fill="#5a8fa2" />
+  <circle cx="400" cy="420" r="4" fill="#5a8fa2" />
+  <circle cx="600" cy="420" r="4" fill="#5a8fa2" />
+  
+  <circle cx="100" cy="390" r="4" fill="#5a8fa2" />
+  <circle cx="300" cy="390" r="4" fill="#5a8fa2" />
+  <circle cx="500" cy="390" r="4" fill="#5a8fa2" />
+  <circle cx="700" cy="390" r="4" fill="#5a8fa2" />
+  
+  <!-- Wolf silhouette -->
+  <path d="M150 350 
+           C160 340, 170 345, 175 330 
+           L180 325 
+           C185 320, 190 315, 195 320 
+           C200 325, 205 320, 210 315 
+           C215 310, 220 305, 230 310 
+           C240 315, 245 310, 250 300
+           L260 290
+           C265 285, 270 280, 280 285
+           L290 290
+           C295 290, 300 285, 305 290
+           C310 295, 315 290, 320 295
+           L325 300
+           C330 300, 335 295, 340 300
+           L345 310
+           C350 315, 355 320, 350 325
+           L340 330
+           C335 335, 330 340, 325 345
+           L320 350
+           C315 355, 310 360, 305 365
+           L300 370
+           C295 375, 290 380, 285 385
+           L280 390
+           C275 395, 270 400, 260 395
+           L250 390
+           C245 385, 240 380, 235 385
+           L230 390
+           C225 395, 220 400, 215 405
+           L210 410
+           C205 415, 200 420, 190 415
+           L180 410
+           C175 405, 170 400, 165 405
+           L160 410
+           C155 415, 150 420, 145 415
+           L140 410
+           C135 405, 130 400, 135 395
+           L140 390
+           C145 385, 150 380, 145 375
+           L140 370
+           C135 365, 130 360, 135 355
+           Z" 
+    fill="#1d3e53" />
+  
+  <!-- Little wolf silhouette -->
+  <path d="M220 390 
+           C225 385, 230 387, 232 380 
+           L234 378 
+           C236 376, 238 374, 240 376 
+           C242 378, 244 376, 246 374 
+           C248 372, 250 370, 254 372 
+           C258 374, 260 372, 262 368
+           L266 364
+           C268 362, 270 360, 274 362
+           L278 364
+           C280 364, 282 362, 284 364
+           C286 366, 288 364, 290 366
+           L292 368
+           C294 368, 296 366, 298 368
+           L300 372
+           C302 374, 304 376, 302 378
+           L298 380
+           C296 382, 294 384, 292 386
+           L290 388
+           C288 390, 286 392, 284 394
+           L282 396
+           C280 398, 278 400, 276 402
+           L274 404
+           C272 406, 270 408, 266 406
+           L262 404
+           C260 402, 258 400, 256 402
+           L254 404
+           C252 406, 250 408, 248 410
+           L246 412
+           C244 414, 242 416, 238 414
+           L234 412
+           C232 410, 230 408, 228 410
+           L226 412
+           C224 414, 222 416, 220 414
+           L218 412
+           C216 410, 214 408, 216 406
+           L218 404
+           C220 402, 222 400, 220 398
+           L218 396
+           C216 394, 214 392, 216 390
+           Z" 
+    fill="#4d7c8a" />
+</svg> 

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Klyent - Projets techniques innovants et études de cas - Solutions numériques d'excellence">
+    <title>Projets | Klyent - Solutions Techniques Innovantes</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+    
+    <!-- Polices Google Fonts (JetBrains Mono & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Préchargement du CSS -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projets.css">
+
+    <!-- Script de gestion du thème (placé en premier pour éviter FOUC) -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <img class="logo-img" src="images/logo.png" alt="Klyent Logo">
+                    <span>Klyent</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="expertise.html">EXPERTISE</a></li>
+                    <li><a href="projets.html" class="active">PROJETS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+                        Mode Sombre
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>NOS PROJETS</h1>
+                <p class="lead">Des solutions techniques innovantes pour des clients exigeants.</p>
+            </div>
+        </section>
+
+        <section class="section project-filters">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <h2>Filtrer par catégorie</h2>
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">Tous</button>
+                        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile</button>
+                        <button class="filter-btn" data-filter="data">Data</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects-grid-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <div class="project-card" data-category="ecommerce">
+                        <div class="project-image">
+                            <div class="project-img-placeholder">
+                                <span class="project-code">Kaporal</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">E-commerce</span>
+                            </div>
+                            <h3 class="project-title">Kaporal</h3>
+                            <p class="project-description">Refonte e-commerce headless avec approche microservices, coordination des équipes internes et externes, optimisation de l'expérience utilisateur et intégration omnicanale (web, mobile, retail)</p>
+                        </div>
+                    </div>
+                    <!-- Projet 2 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-img-placeholder">
+                                <span class="project-code">Softway Medical</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Web</span>
+                            </div>
+                            <h3 class="project-title">Softway Medical</h3>
+                            <p class="project-description">Refonte de modules applicatifs en environnement médical – coordination projet, montée en qualité du code, et migration vers une architecture scalable</p>
+                        </div>
+                    </div>
+                    <!-- Projet 3 -->
+                    <div class="project-card" data-category="ecommerce">
+                        <div class="project-image">
+                            <div class="project-img-placeholder">
+                                <span class="project-code">Ciffreo bona</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">E-commerce</span>
+                            </div>
+                            <h3 class="project-title">Ciffreo bona</h3>
+                            <p class="project-description">Refonte e-commerce et présence web – optimisation de l'expérience utilisateur et intégration omnicanale (web, retail)</p>
+                        </div>
+                    </div>
+                    <!-- Projet 4 -->
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <div class="project-img-placeholder">
+                                <span class="project-code">Happer</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Mobile</span>
+                            </div>
+                            <h3 class="project-title">Happer</h3>
+                            <p class="project-description">Développement d'une application mobile native Android – architecture moderne, Kotlin, Clean Architecture et intégration Mongo</p>
+                        </div>
+                    </div>
+                    <!-- Projet 5 -->
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <div class="project-img-placeholder">
+                                <span class="project-code">Parky</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Mobile</span>
+                            </div>
+                            <h3 class="project-title">Parky</h3>
+                            <p class="project-description">Développement d'une solution de stationnement intelligent – applications mobile (Flutter), web et back-office, architecture temps réel et IoT-ready</p>
+                        </div>
+                    </div>
+                    <!-- Projet 6 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-img-placeholder">
+                                <span class="project-code">PetPalz</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Web</span>
+                            </div>
+                            <h3 class="project-title">PetPalz</h3>
+                            <p class="project-description">Application mobile et plateforme communautaire pour les propriétaires d'animaux. Suivi de santé, rappels vétérinaires, gestion de profil animal complet, et espace d'échange entre passionnés d'animaux.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section project-methodology">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre Approche Projet</h2>
+                    <p class="section-description">Chaque projet est développé selon un processus rigoureux et transparent.</p>
+                </div>
+                <div class="approach-steps">
+                    <div class="approach-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Définition des objectifs</h3>
+                            <p>Nous identifions les besoins spécifiques, les contraintes techniques et les objectifs commerciaux du projet.</p>
+                        </div>
+                    </div>
+                    <div class="approach-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Conception technique</h3>
+                            <p>Nous élaborons une architecture adaptée en sélectionnant les technologies les plus appropriées.</p>
+                        </div>
+                    </div>
+                    <div class="approach-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Développement itératif</h3>
+                            <p>Notre équipe travaille en cycles courts pour garantir une adaptation continue aux besoins.</p>
+                        </div>
+                    </div>
+                    <div class="approach-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Tests & Qualité</h3>
+                            <p>Chaque fonctionnalité est rigoureusement testée pour garantir fiabilité et performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="section project-testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ce que disent nos clients</h2>
+                    <p class="section-description">Des retours d'expérience sur nos projets réalisés.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"L'équipe de Klyent a transformé notre vision en une solution technique parfaitement exécutée, dépassant nos attentes en termes de performance et d'expérience utilisateur."</div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Thomas Dubois</div>
+                            <div class="author-company">Directeur Technique, GRID.SYNC</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"La plateforme de visualisation de données développée par Klyent a révolutionné notre façon d'analyser et d'optimiser nos processus de production."</div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Sophie Moreau</div>
+                            <div class="author-company">Responsable Innovation, DATA.VISUAL</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"L'approche minimaliste de Klyent et leur excellence technique ont produit une solution e-commerce robuste, évolutive et étonnamment simple à maintenir."</div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Marc Lambert</div>
+                            <div class="author-company">CEO, SYSTEM.01</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="section project-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Prêt à concrétiser votre projet?</h2>
+                    <p>Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider à réaliser votre vision technique.</p>
+                    <a href="contact.html" class="btn btn-primary">Démarrer un projet</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <img class="logo-img" src="images/logo.png" alt="Klyent Logo">
+                    <span>Klyent</span>
+                </a>
+                <p>&copy; 2024 Klyent • Tous droits réservés • Design minimaliste et développement technique d'excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script principal (main.js importe les autres) -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/projects-filter.js"></script>
+</body>
+</html> 
